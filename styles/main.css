@@ -27,7 +27,7 @@ header {
 
 .menu {
     display: flex;
-    gap:40px;
+    gap: 40px;
 }
 
 .list-command {
@@ -96,7 +96,7 @@ header {
 }
 
 .special:hover .menu_first,
-.special_first:hover .menu_second{
+.special_first:hover .menu_second {
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
@@ -114,11 +114,10 @@ header {
     text-align: center;
 }
 
-.menu_second, 
+.menu_second,
 .menu_first {
     visibility: hidden;
     opacity: 0;
     transform: translateY(-10px);
-    transition: all .3s ease; 
+    transition: all .3s ease;
 }
-
