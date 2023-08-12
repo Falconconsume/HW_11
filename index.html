@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-level menu</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <ul class="menu">
+                <li class="list-command"><span class="command">HOME</span></li>
+                <li class="list-command special">
+                    <span class="command">PRODUCTS</span>
+                    <span class="menu_icon"></span>
+                    <ul class="menu_first">
+                        <li class="list-command_products special_first">
+                            <span class="command">Product 1</span>
+                            <span class="menu_icon span_first"></span>
+                            <ul class="menu_second">
+                                <li class="list-command_products special_first">
+                                    <span class="command">Sub Item</span>
+                                </li>
+                                <li class="list-command_products special_first">
+                                    <span class="command">Sub Item</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-command_products special_first">
+                            <span class="command">Product 1</span>
+                            <span class="menu_icon span_first"></span>
+                            <ul class="menu_second">
+                                <li class="list-command_products special_first">
+                                    <span class="command">Sub Item</span>
+                                </li>
+                                <li class="list-command_products special_first">
+                                    <span class="command">Sub Item</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list-command"><span class="command">ABOUT</span></li>
+                <li class="list-command"><span class="command">CONTACT</span></li>
+            </ul> 
+        </div>
+        
+    </header>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #252525;
+}
+
+.menu {
+    display: flex;
+    gap:40px;
+}
+
+.list-command {
+    color: gray;
+    cursor: pointer;
+    padding: 25px;
+}
+
+
+.special:hover {
+    background-color: blue;
+    color: white;
+}
+
+.menu_icon {
+    display: inline-block;
+    position: relative;
+    padding: 6px;
+    top: -1px;
+    left: 20px;
+    user-select: none;
+}
+
+.menu_icon:after,
+.menu_icon:before {
+    content: "";
+    height: 1px;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.menu_icon:before {
+    transform: rotate(90deg);
+}
+
+.special_first,
+.special_second {
+    background-color: blue;
+    color: white;
+    border: 1px solid #5858f2;
+}
+
+.menu_first {
+    position: absolute;
+    top: 69px;
+    width: 328px;
+    height: auto;
+    left: 603px;
+}
+
+.list-command_products,
+.special_first {
+    cursor: pointer;
+    padding: 25px;
+    position: relative;
+}
+
+.special_first:hover {
+    background-color: rgb(34, 108, 255);
+}
+
+.span_first {
+    left: 190px;
+}
+
+.special:hover .menu_first,
+.special_first:hover .menu_second{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.menu_second {
+    position: absolute;
+    max-width: 328px;
+    height: auto;
+    width: 100%;
+    right: -327px;
+    top: -1px;
+    z-index: 100;
+    width: 100%;
+    text-align: center;
+}
+
+.menu_second, 
+.menu_first {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all .3s ease; 
+}
+
